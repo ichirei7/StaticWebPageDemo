@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase & Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="page-title">Gadget Site</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+  
+        <!-- Product Information Section -->
+        <div class="section product-info-section">
+            <h2>Product Details</h2>
+            <img src="https://placehold.co/400x300/667EEA/FFFFFF?text=Awesome+Product" alt="Awesome Product">
+            <h3>Awesome Gadget Pro</h3>
+            <p>
+                This Awesome Gadget Pro is the latest in innovative technology, designed to simplify your daily tasks and enhance your digital experience. With its sleek design and powerful features, it's perfect for both professionals and casual users. Enjoy unparalleled performance and a user-friendly interface.
+            </p>
+            <p>
+                **Key Features:** High-resolution display, long-lasting battery, intuitive controls, and robust build quality.
+            </p>
+        </div>
+
+        <!-- Submit Review Section -->
+        <div class="section submit-review-section">
+            <h2>Submit Your Review</h2>
+            <textarea id="reviewTextInput" placeholder="Write your review here..."></textarea>
+            <button onclick="submitReview()">Submit Review</button>
+        </div>
+
+        <!-- Reviews Display Section -->
+        <div class="section reviews-list-section">
+            <h2>Customer Reviews</h2>
+            <div id="reviewsContainer" class="reviews-list">
+                <!-- Initial message for no reviews -->
+                <p id="noReviewsMessage" class="no-reviews-message">There are no reviews yet for the product.</p>
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
